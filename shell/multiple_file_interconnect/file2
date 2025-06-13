@@ -1,0 +1,6 @@
+!#/bin/bash
+
+echo "USERNAME:${USERNAME}"
+echo "CTC:${CTC}"
+echo "NO_OF_INPUT:${NO_OF_INPUT}"
+

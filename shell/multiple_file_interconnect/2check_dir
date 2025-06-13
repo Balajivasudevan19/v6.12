@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+found=0
+
+for item in *;
+do
+	if[ -d "$item" ];then
+	     found=1
+	     break
+	
+	
+	  
+done 
+
+if [ found -eq 1 ];
+then
+	echo "Subdirectory is present........."
+else
+	echo "Subdirectory is not present......."
+fi

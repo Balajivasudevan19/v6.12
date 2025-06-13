@@ -1,0 +1,26 @@
+#!/bin/bash
+if [ ${#} -lt 2 ];
+then
+	echo "Not given the command line input"
+fi
+if [ ${#} -lt 1 ];
+then
+	echo "Number of input is less than {1}"
+	echo "moving to runtime input.........."
+	sleep 3
+fi
+if [ ${#} -lt 2 ];
+then
+	 read -p "Enter the username:" USERNAME
+	 read -p "Enter the CTC:" CTC
+	 export USERNAME
+	 export CTC
+	 export NO_OF_INPUT=2
+
+else
+	export USERNAME=${1}
+	export CTC=${2}
+	export NO_OF_INPUT=${#}
+fi
+
+./file2

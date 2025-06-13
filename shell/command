@@ -1,0 +1,13 @@
+
+
+#efhf " adsfdaf "
+
+if [ $? -eq 0 ];
+then
+	echo "Succesed"
+
+else
+	echo "Fail"
+fi
+
+echo "welcome"
